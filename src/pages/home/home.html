@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Welcome Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-menu [persistent]="true" [content]="navContent">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+        Navigate
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        Item
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content>
+  <ion-nav #navContent></ion-nav>
+</ion-content>
